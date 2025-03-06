@@ -10,28 +10,51 @@ function getComputerChoice(){
     }
 }
 console.log(getComputerChoice());
-// console log the return value
+
 
 function getHumanChoice(){
     let userChoice = prompt("Rock, Paper, or Scissors?");
-
-    if (userChoice = "Rock"){
-        console.log("Rock");
-    } else if (userChoice = "Paper"){
-        console.log("Paper");
-    } else if (userChoice = "Scissors"){
-        return "Scissors";
-    } else {
-        return "Invalid Option";
-    }
-    // create a variable for the humans choice
-    // assign a prompt to the variable to ask for input
-    // based on the users input, return the corresponding string
+    return userChoice;
 }
-//console log the returned value
+let humanChoice = getHumanChoice();
 
-let humanScore = 0;
-let computerScore = 0;
+// if (humanChoice == "rock"){
+//     console.log("rock");
+// } else if (humanChoice == "paper"){
+//     console.log("paper");
+// } else if (humanChoice == "scissors"){
+//     console.log("scissors");
+// } else {
+//     console.log("Invalid Option");
+// }
+
+
+switch (humanChoice){
+    case "rock":
+        console.log("rock");
+        break;
+    case "paper":
+        console.log("paper");
+        break;
+    case "scissors":
+        console.log("scissors");
+        break;
+    default:
+        console.log( "You entered an Invalid Option.");
+}
+
+
+
+
+
+
+
+
+
+
+// UNCOMMENT BELOW AND REWORK IT
+// let humanScore = 0;
+// let computerScore = 0;
 
 function playRound(humanChoice, computerChoice){
     // make humanChoice parameter case-insensitive
@@ -41,5 +64,5 @@ function playRound(humanChoice, computerChoice){
     // if computer wins, increment computerScore by 1.
 }
 
-let humanChoice = 0
-let computerChoice = 0
+// let humanChoice = 0
+// let computerChoice = 0
