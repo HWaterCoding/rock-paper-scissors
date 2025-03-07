@@ -1,5 +1,5 @@
 function getComputerChoice(){
-    let computerChoice = Math.floor(Math.random() * 3);
+    const computerChoice = Math.floor(Math.random() * 3);
     switch (computerChoice){
         case 0:
             return "rock";
@@ -9,52 +9,35 @@ function getComputerChoice(){
             return "scissors";
     }
 }
-console.log(getComputerChoice());
 
 
 function getHumanChoice(){
     let userChoice = prompt("Rock, Paper, or Scissors?");
     return userChoice;
 }
-let humanChoice = getHumanChoice();
 
-// if (humanChoice == "rock"){
-//     console.log("rock");
-// } else if (humanChoice == "paper"){
-//     console.log("paper");
-// } else if (humanChoice == "scissors"){
-//     console.log("scissors");
-// } else {
-//     console.log("Invalid Option");
+
+// let humanChoice = getHumanChoice();
+// const computerChoice = getComputerChoice();
+// console.log(computerChoice);
+
+// switch (humanChoice){
+//     case "rock":
+//         console.log("rock");
+//         break;
+//     case "paper":
+//         console.log("paper");
+//         break;
+//     case "scissors":
+//         console.log("scissors");
+//         break;
+//     default:
+//         console.log( "You entered an Invalid Option.");
 // }
 
 
-switch (humanChoice){
-    case "rock":
-        console.log("rock");
-        break;
-    case "paper":
-        console.log("paper");
-        break;
-    case "scissors":
-        console.log("scissors");
-        break;
-    default:
-        console.log( "You entered an Invalid Option.");
-}
-
-
-
-
-
-
-
-
-
-
-// UNCOMMENT BELOW AND REWORK IT
-// let humanScore = 0;
-// let computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 function playRound(humanChoice, computerChoice){
     // make humanChoice parameter case-insensitive
