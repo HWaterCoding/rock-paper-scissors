@@ -64,3 +64,54 @@ function playGame(){
     }
 } 
 playGame();
+
+
+
+// function playGame(){
+//     let humanScore = 0;
+//     let computerScore = 0;
+
+//     function playRound(){
+//         const humanChoice = getHumanChoice();
+//         const computerChoice = getComputerChoice();
+
+//         if(humanChoice == computerChoice){
+//             console.log(`DRAW! You both picked ${humanChoice}!`)
+//         } else if(humanChoice === "rock" && computerChoice === "paper"){
+//             console.log(`YOU LOSE! Paper beats rock!`)
+//             computerScore++
+//         } else if(humanChoice === "rock" && computerChoice === "scissors"){
+//             console.log(`YOU WIN! Rock beats scissors!`)
+//             humanScore++
+//         } else if(humanChoice === "paper" && computerChoice === "rock"){
+//             console.log(`YOU WIN! Paper beats rock!`)
+//             humanScore++
+//         } else if(humanChoice === "paper" && computerChoice === "scissors"){
+//             console.log(`YOU LOSE! Scissors beats paper!`)
+//             computerScore++
+//         } else if(humanChoice === "scissors" && computerChoice === "rock"){
+//             console.log(`YOU LOSE! Rock beats scissors!`)
+//             computerScore++
+//         } else if(humanChoice === "scissors" && computerChoice === "paper"){
+//             console.log(`YOU WIN! Scissors beats paper!`)
+//             humanScore++
+//         } else {
+//             console.log(`Invalid choice. Please try again.`)
+//         }
+//     }
+
+//     playRound()
+//     playRound()
+//     playRound()
+//     playRound()
+//     playRound()
+
+//     if(humanScore > computerScore){
+//         console.log(`You WIN! You beat the computer ${humanScore} - ${computerScore}!`);        
+//     } else if(computerScore > humanScore){
+//         console.log(`You LOSE! The computer beat you ${computerScore} - ${humanScore}!`);
+//     } else if(computerScore == humanScore){
+//         console.log(`It's a DRAW! You tied the computer ${computerScore} - ${humanScore}!`);
+//     }
+// } 
+// playGame();
