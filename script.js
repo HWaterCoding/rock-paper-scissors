@@ -74,7 +74,7 @@ function playGame(){
     //     } else {
     //         console.log(`Invalid choice. Please try again.`)
     //     }
-    // }
+    }
 
 
     // rockBtn.addEventListener("click", playRound);
@@ -105,7 +105,6 @@ function playGame(){
     } else if(computerScore == humanScore){
         console.log(`It's a DRAW! You tied the computer ${computerScore} - ${humanScore}!`);
     }
-
 }
 
 playGame();
@@ -179,4 +178,4 @@ playGame();
 //     // scissors.addEventListener("click", playRound());
 
 // } 
-// playGame();
+// playGame():

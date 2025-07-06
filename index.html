@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="icon" href="">  -->
+    <script src="https://kit.fontawesome.com/00250d9010.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/rps-favicon.png"> 
     <!-- ADD FONTS -->
 </head>
 <body>
@@ -14,16 +15,16 @@
         <p>First to 5 points wins!</p>
 
         <div class="scoreboard">
-            <div class="userAvatar">
-                <!-- <img> -->
+            <div class="profile">
+                <img src="images/player-avatar.png" alt="You" class="avatar">
                 <p>You</p>
             </div>
             <div class="score">
                 <p>0 : 0</p>
                 <p>First to 5 points wins!</p>
             </div>
-            <div class="computerAvatar">
-                <!-- <img> -->
+            <div class="profile">
+                <img src="images/computer-avatar.png" alt="Computer" class="avatar">
                 <p>Computer</p>
             </div>
         </div>
@@ -36,22 +37,21 @@
         <p>Make your choice wisely!</p>
         
         <div class="buttons">
-            <!-- turn all 3 buttons into images that are clickable -->
             <button id="rockBtn">
-                <!-- <img>  -->
+                <img src="images/rock.png"> 
                  <p>Rock</p>
             </button>
             <button id="paperBtn">
-                <!-- <img> -->
+                <img src="images/paper.png">
                  <p>Paper</p>
             </button>
             <button id="scissorsBtn">
-                <!-- <img> -->
+                <img src="images/scissors.png">
                  <p>Scissors</p>
             </button>
         </div>
-
-        <!-- github link go here -->
+       
+        <a href="https://github.com/HWaterCoding" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
 
         <div id="hiddenOverlay">
             <div id="popup">
@@ -61,7 +61,6 @@
         </div>
 
     </div>
-    
 
     <script src="script.js"></script>
 </body>
