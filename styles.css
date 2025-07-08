@@ -3,14 +3,89 @@ body{
     height: 100%;
 }
 
+body{
+    background-color: tan;
+}
 
+h1{
+    text-align: center;
+}
 
+.container p{
+    text-align: center;
+    font-size: 26px;
+}
 
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 150px;
+}
 
+.score{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 36px;
+    font-weight: 600;
+}
 
+.profile p{
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.profile img{
+    width: 60%;
+}
 
+.selections{
+    display: flex;
+    justify-content: space-around;
+}
 
+.selections div{
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button img{
+    width: 60%;
+    padding-top: 20px;
+}
+
+.buttons button{
+    width: 400px;
+    background-color: rgb(140, 95, 40);
+    border: none;
+    box-shadow:8px 8px rgb(77, 175, 138);
+}
+
+.buttons button:hover{
+    background-color: rgb(160, 115, 60);
+}
+
+.buttons button:active{
+    background-color: rgb(200, 165, 100);
+    transform: translateY(7px); 
+    box-shadow:8px 8px rgb(67, 88, 93);
+}
+/* .profile{
+    display: flex;
+    justify-content: center;
+
+} */
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 
 #overlay{
     display: none;

@@ -4,7 +4,6 @@ let computerChoice;
 let humanScore = 0;
 let computerScore = 0;
 
-
 //variables to be linked to HTML elements
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
@@ -16,7 +15,6 @@ const computerDisplay = document.getElementById("computerDisplay");
 const gameOutcome = document.getElementById("gameOutcome");
 const resetBtn = document.getElementById("resetBtn");
 const overlay = document.getElementById("overlay");
-
 
 //function to get randomized computer choice
 function getComputerChoice(){
@@ -30,7 +28,6 @@ function getComputerChoice(){
             return "Scissors";
     }
 }
-
 
 //function for RPS game logic.
 function playRound(humanChoice, computerChoice){
@@ -60,12 +57,10 @@ function playRound(humanChoice, computerChoice){
     }
 }  
 
-
 //event listeners on buttons to execute functions
 rockBtn.addEventListener("click", () => runChoice("Rock"));
 paperBtn.addEventListener("click", () => runChoice("Paper"));
 scissorsBtn.addEventListener("click", () => runChoice("Scissors"));
-
 
 //function to handle the user input and run the game taking the button clicked as a parameter
 function runChoice(humanChoice){
@@ -75,7 +70,6 @@ function runChoice(humanChoice){
     updateChoice(humanChoice, computerChoice);
     isGameOver();
 }
-
 
 //function to display the current choice of both player and computer
 function updateChoice(humanChoice, computerChoice){
@@ -104,12 +98,10 @@ function updateChoice(humanChoice, computerChoice){
         }
 }
 
-
 //function to update the score as rounds are played
 function updateScore(){
     currentScore.textContent = `${humanScore} : ${computerScore}`;
 }
-
 
 //function to end the game when player or computer hits 5 and display play again overlay
 function isGameOver(){
@@ -124,10 +116,8 @@ function isGameOver(){
     }
 }
 
-
 //event listener on reset button to execute the function on click
 resetBtn.addEventListener("click", resetGame);
-
 
 //function to restart the game once it is over
 function resetGame(){
@@ -139,78 +129,3 @@ function resetGame(){
     playerDisplay.textContent = "";
     computerDisplay.textContent = "";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function playGame(){
-//     let humanScore = 0;
-//     let computerScore = 0;
-
-//     function playRound(){
-//         const humanChoice = getHumanChoice();
-//         const computerChoice = getComputerChoice();
-
-//         if(humanChoice == computerChoice){
-//             console.log(`DRAW! You both picked ${humanChoice}!`)
-//         } else if(humanChoice === "rock" && computerChoice === "paper"){
-//             console.log(`YOU LOSE! Paper beats rock!`)
-//             computerScore++
-//         } else if(humanChoice === "rock" && computerChoice === "scissors"){
-//             console.log(`YOU WIN! Rock beats scissors!`)
-//             humanScore++
-//         } else if(humanChoice === "paper" && computerChoice === "rock"){
-//             console.log(`YOU WIN! Paper beats rock!`)
-//             humanScore++
-//         } else if(humanChoice === "paper" && computerChoice === "scissors"){
-//             console.log(`YOU LOSE! Scissors beats paper!`)
-//             computerScore++
-//         } else if(humanChoice === "scissors" && computerChoice === "rock"){
-//             console.log(`YOU LOSE! Rock beats scissors!`)
-//             computerScore++
-//         } else if(humanChoice === "scissors" && computerChoice === "paper"){
-//             console.log(`YOU WIN! Scissors beats paper!`)
-//             humanScore++
-//         } else {
-//             console.log(`Invalid choice. Please try again.`)
-//         }
-//     }
-
-//     // playRound()
-//     // playRound()
-//     // playRound()
-//     // playRound()
-//     // playRound()
-
-//     if(humanScore > computerScore){
-//         console.log(`You WIN! You beat the computer ${humanScore} - ${computerScore}!`);        
-//     } else if(computerScore > humanScore){
-//         console.log(`You LOSE! The computer beat you ${computerScore} - ${humanScore}!`);
-//     } else if(computerScore == humanScore){
-//         console.log(`It's a DRAW! You tied the computer ${computerScore} - ${humanScore}!`);
-//     }
-
-//     // const rock = document.querySelector("#rock");
-//     // const paper = document.querySelector("#paper");
-//     // const scissors = document.querySelector("#scissors");
-
-//     // rock.addEventListener("click", playRound);
-//     // paper.addEventListener("click", playRound());
-//     // scissors.addEventListener("click", playRound());
-
-// } 
-// playGame():
