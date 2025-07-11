@@ -20,14 +20,15 @@ h1,
 
 .scoreboard,
 .selections,
-.buttons,
-a{
+.buttons{
     display: flex;
     justify-content: center;
 }
 
 .container{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img{
@@ -80,25 +81,34 @@ button img{
 .buttons button{
     height: 14em;
     width: 200px;
-    background-color: rgb(140, 95, 40);
+    background-color: rgb(160, 125, 60);
     border: none;
-    box-shadow:5px 5px rgb(77, 175, 138);
+    box-shadow:5px 5px rgb(136, 123, 109);
 }
 
 .buttons button:hover{
-    background-color: rgb(160, 115, 60);
+    background-color: rgb(180, 145, 80);
 }
 
 .buttons button:active{
     background-color: rgb(200, 165, 100);
     transform: translateY(7px); 
-    box-shadow:8px 8px rgb(67, 88, 93);
+    box-shadow:6px 6px rgb(67, 88, 93);
 }
 
 a{
     margin-top: 40px;
+    text-decoration: none;
+    color: rgb(73, 68, 63);
 }
 
 #overlay{
     display: none;
+}
+
+#popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
