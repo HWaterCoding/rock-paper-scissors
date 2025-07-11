@@ -5,27 +5,45 @@ body{
 
 body{
     background-color: tan;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 h1{
+    margin: 100px 10px 10px 10px;
+}
+
+h1,
+.container p,
+.scoreboard{
     text-align: center;
 }
 
+.scoreboard,
+.selections,
+.buttons,
+a{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+
+}
+
+img{
+    height: 7em;
+}
+
 .container p{
-    text-align: center;
     font-size: 26px;
 }
 
 .scoreboard{
-    display: flex;
-    justify-content: center;
-    text-align: center;
     gap: 150px;
 }
 
 .score{
-    display: flex;
-    flex-direction: column-reverse;
+    margin-top: 15px;
     font-size: 36px;
     font-weight: 600;
 }
@@ -36,13 +54,14 @@ h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.profile img{
-    width: 60%;
+.selections{
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
 }
 
-.selections{
-    display: flex;
-    justify-content: space-around;
+.selections p{
+    font-size: 1.4em;
 }
 
 .selections div{
@@ -50,20 +69,20 @@ h1{
 }
 
 .buttons{
-    display: flex;
-    justify-content: space-evenly;
+    gap: 5em;
+    padding: 1em 2em;
 }
 
 button img{
-    width: 60%;
     padding-top: 20px;
 }
 
 .buttons button{
-    width: 400px;
+    height: 14em;
+    width: 200px;
     background-color: rgb(140, 95, 40);
     border: none;
-    box-shadow:8px 8px rgb(77, 175, 138);
+    box-shadow:5px 5px rgb(77, 175, 138);
 }
 
 .buttons button:hover{
@@ -75,15 +94,8 @@ button img{
     transform: translateY(7px); 
     box-shadow:8px 8px rgb(67, 88, 93);
 }
-/* .profile{
-    display: flex;
-    justify-content: center;
-
-} */
 
 a{
-    display: flex;
-    justify-content: center;
     margin-top: 40px;
 }
 
